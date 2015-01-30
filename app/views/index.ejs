@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Vanilla JavaScript examples</title>
+
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="../../dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- Custom styles for this template -->
+    <!--  <link href="jumbotron.css" rel="stylesheet">-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Vanilla JavaScript examples</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Vanilla JavaScript examples</h1>
+            <br/>
+            <p><a class="btn btn-default btn-lg" href="https://www.youtube.com/watch?v=awP_QQQk_Nc&list=PLOxOmO43E6Jt4GfZtF8yR6KghIdmc7715" role="button">Learn more &raquo;</a>
+            </p>
+            <%=new Date()%>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Keyboard Events</h2>
+
+                <br/>
+                <p>An example how to listen keyboard events with keypress. If textbox input is something else than alphabetic (e.g. numbers), an alert box is displayed.</p>
+
+                <div class="form-group">
+                    <legend>Events</legend>
+                    <input id="txtInput" type="text" class="form-control" />
+                </div>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a>
+                </p>
+            </div>
+
+            <!--Forms-->
+            <div class="col-md-4">
+                <h2>Forms</h2>
+                <br/>
+                <p>Using JavaScript with Forms</p>
+                <form name="theForm" id="theForm" action="" method="POST" role="form">
+                    <legend>Form Validation with JavaScript</legend>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="myTextBox" placeholder="Input field">
+                        <br/>
+                        <textarea class="form-control" id="myTextArea" placeholder="Text area"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="dayOfWeek">Dropdown menu</label>
+                        <select class="form-control" id="dayOfWeek" name="dayOfWeek">
+                            <option value="0">Sunday</option>
+                            <option value="1">Monday</option>
+                            <option value="2">Tuesday</option>
+                            <option value="3">Wednesday</option>
+                            <option value="4">Thursday</option>
+                            <option value="5">Friday</option>
+                            <option value="6">Saturday</option>
+                        </select>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="colorBox" value="red" /> Red</label>
+                        <br/>
+                        <label>
+                            <input type="checkbox" name="colorBox" value="blue" /> Blue</label>
+                        <br/>
+                        <label>
+                            <input type="checkbox" name="colorBox" value="green" /> Green</label>
+                        <br/>
+                    </div>
+                    <button type="button" id="myButton" class="btn btn-default">Click me!</button>
+                </form>
+                <br/>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a>
+                </p>
+            </div>
+
+            <!--AJAX-->
+            <div class="col-md-4">
+                <h2>Ajax</h2>
+                <p>Creating AJAX (Asynchronous JavaScript And XML) requests for updating web page.</p>
+
+                <form name="theFormTwo" id="theFormTwo" action="" role="form">
+                    <legend>AJAX</legend>
+                    <input type="text" class="form-control" id="txtName" name="txtName" placeholder="Name">
+                    <br/>
+                    <input type="email" class="form-control" id="txtEmail" name="txtEmail" placeholder="Email">
+                    <br/>
+                    <button type="submit" name="btnSubmit" value="Paina" class="btn btn-default">Submit</button>
+                </form>
+                <!--Koodeille rakennetaan alue-->
+                <!--<div class="highlight">
+                    <pre>
+                    <code>
+                    <span>var txtbox = document.getElementById("txtInput");</span>
+                    <span>  var txtbox = document.getElementById("txtInput");</span>
+                    </code>
+                    </pre>
+                </div> -->
+                <div class="form-group">
+                    <br/>
+                    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!--Footer-->
+        <footer>
+            <p>&copy; Innerstate 2014</p>
+        </footer>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files <aside></aside> needed -->
+    <!--<script src="js/bootstrap.min.js"></script>-->
+
+    <!--Perus (päiväys, listat, funktio)-->
+    <!--<script src="date/date.js"></script>-->
+    <!--<script src="functions/functions.js"></script>-->
+    <!--<script src="arrays/arrays.js"></script>-->
+
+    <!--Olio-jutut-->
+    <!--<script src="javascript/advancedObjects/advancedObjects.js"></script>-->
+    <!--<script src="javascript/advancedObjects/functionObjects.js"></script>-->
+
+    <!--Eventit-->
+    <script src="javascript/dom/eventUtility.js"></script>
+    <script src="javascript/dom/keyboardEventsKeypress.js"></script>
+    <script src="javascript/dom/scriptingForms.js"></script>
+    <script src="javascript/dom/keyboardEvents.js"></script>
+
+    <!--AJAX-->
+    <!--<script src="javascript/ajax/ajax.js"></script>-->
+    <script src="javascript/ajax/post_json.js"></script>
+    <!--<script src="javascript/ajax/formAjax.js"></script>-->
+
+    <!--localstorage-->
+    <!--<script src="javascript/storage/localstorage.js"></script>-->
+
+    <!--Errorhandling-->
+    <!--<script src="javascript/Errorhandling/error.js"></script>-->
+
+    <!--livereload-->
+    <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
+
+    <!--angular, ei vielä käytössä-->
+    <script src="/bower_components/angular/angular.js"></script>
+</body>
+
+</html>

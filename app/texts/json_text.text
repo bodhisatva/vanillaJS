@@ -1,0 +1,13 @@
+{
+  "channel" : {
+    "title" : "RSS sample",
+    "description" : "A sample Rss feed",
+    "link" : "https://www.google.fi",
+    "items" : [
+      {
+        "title" : "An items Title",
+        "description" : "A description of an Item"
+      }
+    ]
+  }
+}
